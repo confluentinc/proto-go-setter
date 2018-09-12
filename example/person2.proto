@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "github.com/codyaray/proto-go-setter/setter.proto";
+
+option go_package = "person";
+
+message Person2 {
+    option (setter.all_fields)=true;
+
+    int32 id = 1 [(setter.exclude)=true];
+    string name = 2;
+}
