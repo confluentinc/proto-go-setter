@@ -1,6 +1,7 @@
 # proto-go-setter
 
-Add setters for generated message fields.
+Add setters for generated message fields. Supports scalar values (string, int32, etc) and maps
+with primitive types for both key and value.
 
 This is an often-requested feature for protoc-gen-go that won't be added to the core generator. See:
 

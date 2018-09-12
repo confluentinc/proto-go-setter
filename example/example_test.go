@@ -66,6 +66,20 @@ func ExamplePerson4_NoSetters() {
 	// true
 }
 
+func ExamplePerson5_SetMap() {
+	p := &Person5{
+		Id: 1929,
+		Name: "Batman",
+	}
+
+	fmt.Println(strings.TrimSpace(p.String()))
+	p.SetPhoneNumbers(map[string]string{
+		"home": "555-4ALFRED",
+		"work": "555-BATCAVE",
+	})
+	fmt.Println(strings.TrimSpace(p.String()))
+}
+
 func checkMethodNotExists(obj interface{}, name string) bool {
 	return reflect.ValueOf(obj).Elem().MethodByName(name) == reflect.Value{}
 }

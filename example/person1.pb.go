@@ -9,12 +9,14 @@ It is generated from these files:
 	example/person2.proto
 	example/person3.proto
 	example/person4.proto
+	example/person5.proto
 
 It has these top-level messages:
 	Person1
 	Person2
 	Person3
 	Person4
+	Person5
 */
 package person
 

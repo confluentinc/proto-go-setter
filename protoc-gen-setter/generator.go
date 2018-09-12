@@ -32,7 +32,7 @@ func (p *Generator) ShouldWrite() bool {
 func (p *Generator) Generate(file *generator.FileDescriptor) {
 	t := template.Must(template.New("setter").Parse(tmpl))
 
-	pkg, include := SetterAST(file)
+	pkg, include := SetterAST(file, p.Generator)
 	if include {
 		var buf bytes.Buffer
 		t.Execute(&buf, pkg)
@@ -48,9 +48,3 @@ func (p *Generator) GenerateImports(file *generator.FileDescriptor) {
 func init() {
 	generator.RegisterPlugin(NewGenerator())
 }
-
-//
-//func (Generator) GenerateImports(file *interface{}) {
-//	panic("implement me")
-//}
-//
