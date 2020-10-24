@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "github.com/codyaray/proto-go-setter/setter.proto";
+import "github.com/confluentinc/proto-go-setter/setter.proto";
 
 option go_package = "person";
 

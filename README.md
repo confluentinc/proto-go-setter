@@ -15,7 +15,7 @@ The simplest option is to just generate a setter for a single field.
 ```proto
 syntax = "proto3";
 
-import "github.com/codyaray/proto-go-setter/setter.proto";
+import "github.com/confluentinc/proto-go-setter/setter.proto";
 
 message Person {
   string id = 1;
@@ -29,7 +29,7 @@ all fields _except_ a single field.
 ```proto
 syntax = "proto3";
 
-import "github.com/codyaray/proto-go-setter/setter.proto";
+import "github.com/confluentinc/proto-go-setter/setter.proto";
 
 message Person {
   option (setter.all_fields) = true;
@@ -44,7 +44,7 @@ Lastly, you may want to generate setters for everything in a file.
 ```proto
 syntax = "proto3";
 
-import "github.com/codyaray/proto-go-setter/setter.proto";
+import "github.com/confluentinc/proto-go-setter/setter.proto";
 
 option (setter.all_messages) = true;
 
