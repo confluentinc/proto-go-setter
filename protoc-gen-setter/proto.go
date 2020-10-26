@@ -8,7 +8,7 @@ import (
 	"github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
 	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
 
-	"github.com/codyaray/proto-go-setter/setter"
+	"github.com/confluentinc/proto-go-setter/setter"
 )
 
 type SetterFile struct {
